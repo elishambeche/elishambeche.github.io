@@ -70,3 +70,20 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+/* Footer styling */
+footer {
+  background: #003366; /* dark blue */
+  color: #ffffff;      /* white text */
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ffcc00;      /* gold/yellow links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #ffffff;      /* turns white on hover */
+}
