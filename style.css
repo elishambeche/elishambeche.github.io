@@ -1,72 +1,108 @@
-/* General page styling */
+/* ====== General Styles ====== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px;
+}
+
+a {
+  text-decoration: none;
   color: #333;
 }
 
-/* Header styling */
-header {
-  background: #004080; /* dark blue */
-  color: white;
-  padding: 30px 0;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  margin: 5px 0 0;
-  font-size: 1.2rem;
-}
-
-/* Section styling */
 section {
-  padding: 40px;
-  max-width: 900px;
+  padding: 40px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
-h2 {
-  color: #004080;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
+/* ====== Header ====== */
+header {
+  background: #004466;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-/* Project cards */
-.project {
-  background: white;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 8px;
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* ====== About Section ====== */
+#about {
+  background: #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 30px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.project h3 {
-  margin-top: 0;
-  color: #003366;
-}
-
-/* Footer styling */
-footer {
-  background: #003366; /* dark blue */
-  color: #ffffff;      /* white text */
-  padding: 20px;
+/* ====== Projects Section ====== */
+#projects {
   text-align: center;
 }
 
+.project {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 700px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Project Color Themes */
+.project.excel {
+  background: #217346; /* Excel Green */
+}
+
+.project.sql {
+  background: #e67e22; /* SQL Orange */
+}
+
+.project.tableau {
+  background: #1f77b4; /* Tableau Blue */
+}
+
+.project.powerbi {
+  background: #f2c811; /* Power BI Yellow */
+  color: #000;
+}
+
+.project.python {
+  background: #6a1b9a; /* Python Purple */
+}
+
+/* ====== Footer ====== */
+footer {
+  background: #004466;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
 footer a {
-  color: #ffcc00;      /* gold/yellow links */
-  text-decoration: none;
+  color: #f9d342; /* Yellow links */
   font-weight: bold;
 }
 
 footer a:hover {
-  color: #ffffff;      /* turns white on hover */
+  color: #fff;
 }
