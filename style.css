@@ -1,0 +1,65 @@
+/* General page style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header section */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+header h2 {
+  margin: 10px 0 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/* Content section */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h3 {
+  border-bottom: 2px solid #003366;
+  padding-bottom: 5px;
+  color: #003366;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact section */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #003366;
+  color: white;
+}
+
+a {
+  color: #003366;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
