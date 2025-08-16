@@ -78,24 +78,44 @@ header p {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+/* Distinct card colors for each project type */
+.project.excel {
+    background-color: #fdf5e6; /* light beige */
+}
+
+.project.sql {
+    background-color: #e6f7ff; /* light blue */
+}
+
+.project.tableau {
+    background-color: #fff0f5; /* light pink/purple */
+}
+
+.project.powerbi {
+    background-color: #f0fff0; /* light green */
+}
+
+.project.python {
+    background-color: #fffbe6; /* light yellow */
+}
+
 .project a {
-    color: #000; /* black text for visibility */
+    color: #000; /* black text */
     text-decoration: none;
     display: block;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* light semi-transparent overlay */
+    border-radius: 10px;
 }
 
 .project a:hover {
     transform: scale(1.03);
-    background-color: rgba(255, 255, 255, 0.9); /* slightly brighter on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 /* Project Titles */
 .project h3 {
     font-size: 1.4em;
     font-weight: bold;
-    text-shadow: 0 0 0 rgba(0,0,0,0); /* remove shadow for black text */
     margin-bottom: 10px;
 }
 
@@ -103,7 +123,6 @@ header p {
 .project p {
     font-size: 1em;
     font-weight: 600;
-    text-shadow: 0 0 0 rgba(0,0,0,0); /* remove shadow for black text */
 }
 
 /* Footer Section */
