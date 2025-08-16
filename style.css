@@ -1,110 +1,124 @@
-/* ====== General Styles ====== */
+/* General Body Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
-  text-align: center; /* center all general text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-h1, h2, h3 {
-  margin: 0 0 10px;
-}
-
-/* ====== Header ====== */
+/* Header Section */
 header {
-  background: #004466;
-  color: #fff;
-  text-align: center;
-  padding: 50px 20px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1e3a8a; /* deep blue */
+    color: #fff;
 }
 
 header h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.2em;
-  margin-top: 10px;
+    font-size: 1.2em;
 }
 
-/* ====== About Section ====== */
+/* Notice Section */
+#notice p {
+    text-align: center;
+    background-color: #fffae6; 
+    color: #222; 
+    font-weight: bolder; 
+    font-size: 1.4em; 
+    padding: 20px; 
+    border: 2px solid #f0c36d;
+    margin-bottom: 25px;
+}
+
+/* About Section */
 #about {
-  background: #fff;
-  margin: 20px auto;
-  border-radius: 10px;
-  padding: 30px;
-  max-width: 900px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
 }
 
 #about p {
-  text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1em;
 }
 
-/* ====== Projects Section ====== */
+/* Projects Section */
 #projects {
-  margin: 40px auto;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
+#projects h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Project Cards */
 .project {
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 12px;
-  color: #fff;
-  max-width: 700px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center; /* center text inside project cards */
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.project:hover {
-  transform: scale(1.03);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+.project a {
+    color: #fff; /* text color */
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
 }
 
-/* Project Color Themes */
-.project.excel {
-  background: #217346; /* Excel Green */
+.project a:hover {
+    transform: scale(1.03);
+    background-color: rgba(0, 0, 0, 0.6); /* slightly darker on hover */
 }
 
-.project.sql {
-  background: #e67e22; /* SQL Orange */
+/* Project Titles */
+.project h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
 }
 
-.project.tableau {
-  background: #1f77b4; /* Tableau Blue */
+/* Project Descriptions */
+.project p {
+    font-size: 1em;
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 2px rgba(0,0,0,0.4);
 }
 
-.project.powerbi {
-  background: #f2c811; /* Power BI Yellow */
-  color: #000; /* dark text for readability */
-}
-
-.project.python {
-  background: #6a1b9a; /* Python Purple */
-}
-
-/* ====== Footer ====== */
+/* Footer Section */
 footer {
-  background: #004466;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1e3a8a;
+    color: #fff;
 }
 
 footer a {
-  color: #f9d342; /* yellow links */
-  font-weight: bold;
+    color: #fffae6;
+    text-decoration: none;
 }
 
 footer a:hover {
-  color: #fff;
-}
-
-/* ====== Headings inside sections ====== */
-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
+    text-decoration: underline;
 }
