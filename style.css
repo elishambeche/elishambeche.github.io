@@ -6,21 +6,11 @@ body {
   background: #f4f4f9;
   color: #333;
   line-height: 1.6;
+  text-align: center; /* center all general text */
 }
 
 h1, h2, h3 {
   margin: 0 0 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
 }
 
 /* ====== Header ====== */
@@ -43,15 +33,20 @@ header p {
 /* ====== About Section ====== */
 #about {
   background: #fff;
-  margin: 20px 0;
+  margin: 20px auto;
   border-radius: 10px;
   padding: 30px;
+  max-width: 900px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#about p {
+  text-align: center;
 }
 
 /* ====== Projects Section ====== */
 #projects {
-  text-align: center;
+  margin: 40px auto;
 }
 
 .project {
@@ -61,6 +56,7 @@ header p {
   color: #fff;
   max-width: 700px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* center text inside project cards */
 }
 
 .project:hover {
@@ -83,7 +79,7 @@ header p {
 
 .project.powerbi {
   background: #f2c811; /* Power BI Yellow */
-  color: #000;
+  color: #000; /* dark text for readability */
 }
 
 .project.python {
@@ -99,10 +95,16 @@ footer {
 }
 
 footer a {
-  color: #f9d342; /* Yellow links */
+  color: #f9d342; /* yellow links */
   font-weight: bold;
 }
 
 footer a:hover {
   color: #fff;
+}
+
+/* ====== Headings inside sections ====== */
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
